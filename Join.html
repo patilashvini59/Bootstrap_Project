@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/Join.css" rel="stylesheet"/>
+
+    <title>Login Page</title>
+  </head>
+  <body>
+   <div class="container-fluid bg-warning pb-5">
+                    <div class="row pt-5">
+                          <div class="col-12 col-lg-3 text-center">
+                             <img src="image/logo5.png" alt="client" class="img-fluid" width="150px" height="150px">
+                          </div>
+                          <div class="col-12 col-lg-6"><p class="text-center para">Sign Up</p>                          </div>
+                          <div class="col-12 col-lg-3 pt-4 text-center">
+                            <a class="sign" href="Signup.html">Sign Up</a>     
+                          </div>
+                    </div>
+  </div>
+  <div class="container mt-5">
+        <div class="row justify-content-center ">
+           <div class="col-12 col-lg-8 p-5">
+             <form class="border border-light bg-light shadow p-5 mb-5 bg-body rounded border border-3">
+           
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Enter Your First Name</label>
+              <input type="text" class="form-control bg-light text-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="textlHelp" class="form-text">Write first letter in Capital.</div>
+            </div>
+
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fs-5">Enter Your Last Name</label>
+                    <input type="text" class="form-control bg-light text-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="textlHelp" class="form-text">Write first letter in Capital.</div>
+                  </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Email address</label>
+              <input type="email" class="form-control bg-light text-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                    <label for="inputPassword4" class="form-label fs-5">Password</label>
+                    <input type="password" class="form-control bg-light text-dark" id="inputPassword4">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPassword4" class="form-label fs-5">Retype-Password</label>
+                    <input type="password" class="form-control bg-light text-dark" id="inputPassword4">
+                  </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Enter Phone Number</label>
+              <input type="number" class="form-control bg-light text-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              
+                  <label for="exampleInputEmail1" class="form-label fs-5">Gender</label>
+                  <select class="form-select bg-light text-dark mb-3" aria-label="Default select example">
+                    <option selected>Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+              <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fs-5">Write Comment</label>
+                    <textarea class="form-control bg-light text-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Yes, send me emails on Gold's Gym Products, Services, & Events.
+                    </label>
+                  </div>
+             <button type="submit" class="btn btn-primary bg-success mb-3">Lets Get Started</button>
+           
+           </form>
+         </div>
+       </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.min.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+    </svg></button>
+    <!-- top button script -->
+    <script>
+      mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+    </script>
+  </body>
+</html>

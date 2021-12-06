@@ -1,0 +1,56 @@
+
+function gf_apply_rules()
+{ var site="https://goldsgym.in/website/contact_job";
+loc_id= $('#where_to_apply option:selected').val();
+var	sh_password="";
+
+$("#icdc").remove();
+$("#sh").remove();
+$("#job_type").remove();
+	$.ajax({type:'POST',
+        	url:site,
+     data:"action=getform&c_id="+loc_id+"&sh_password="+sh_password,
+        				success:function(result){
+        
+						$("#contact_ajax").append(result);	//$("#contact_ajax").html(result);
+        				}
+
+
+
+        			})
+
+}
+function gf_apply_rules2()
+{ var site="https://goldsgym.in/website/job_type";
+loc_id= $('#state option:selected').val();
+var	sh_password="";
+$("#icdc").remove();
+$("#sh").remove();
+	$.ajax({type:'POST',
+        	url:site,
+     data:"action=getform&c_id="+loc_id+"&sh_password="+sh_password,
+        				success:function(result){
+                   $("#icd").remove();
+				   $("#check_city").remove();
+						$("#job_type").append(result);
+						
+        				}
+
+
+
+        			})
+
+}
+function getCity() {
+        ans=$("#stateId").val(); 
+var site="https://goldsgym.in/website/location_ajax_withselect";		
+        $.ajax({
+            type:'POST',
+            url:site,
+            data:"action=getcity&state_id="+ans,
+            success:function(result){
+				$("#check_city").remove();
+                $("#check_state").append(result);
+            }
+        });
+    }
